@@ -78,3 +78,10 @@ function catClick() {
     window.location.href = "./pages/main.html";
   }, 6000);
 }
+
+function skip() {
+  gsap.to(".black", { duration: 1, y: 0 });
+  setTimeout(() => {
+    window.location.href = "./pages/main.html";
+  }, 1000);
+}

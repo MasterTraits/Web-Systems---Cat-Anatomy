@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    ::selection { background-color: rgba(255, 255, 255, 0); }
-  </style>
+  <meta name="A cat anatomy website" content="Web Systems & Technology">
+  <link rel="icon" href="./images/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./pages/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
@@ -25,6 +25,17 @@
 <body class="p-5 overflow-hidden">
   <header class="flex h-10 p-3 mb-14 justify-between font-medium">
     <p class="text-head1">Emmanuel Fabella @ RTU</p>
+    <button class="btn" type="button" onclick="skip()">
+      <strong>SKIP</strong>
+      <div id="container-stars">
+          <div id="stars"></div>
+      </div>
+  
+      <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+      </div>
+    </button>
     <p class="text-head2">Web Systems & Technology</p>
   </header>
   <main class="relative flex flex-col justify-center items-center">

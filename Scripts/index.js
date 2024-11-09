@@ -70,7 +70,7 @@ function eyes() {
   textGroup.classList.remove("hidden");
   imgEdit.style.backgroundImage = "url('https://carlasonheim.wordpress.com/wp-content/uploads/2015/04/cateyephoto.jpg?w=660')";
   gsap.to(".header-edit", { text: "Eyes" });
-  gsap.to(".text-edit", { text: "Eyes are the most important part of a cat's anatomy. They are the window to the soul." });
+  gsap.to(".text-edit", { text: "Eyes are the most important part of a cat's anatomy. They are the window to the soul. A cat's eyes are highly adapted for low light conditions, allowing them to see well in the dark. The large cornea and tapetum lucidum, a layer of tissue behind the retina, help to reflect light and enhance night vision. Additionally, cats have a third eyelid, known as the nictitating membrane, which helps to protect and moisten the eye. The slit-shaped pupils of a cat can expand and contract dramatically to control the amount of light entering the eye, providing excellent vision in both bright and dim conditions." });
 }
 
 function Nose() {
