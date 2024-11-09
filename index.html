@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ::selection { background-color: rgba(255, 255, 255, 0); }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="p-5 overflow-hidden">
+  <header class="flex h-10 p-3 mb-14 justify-between font-medium">
+    <p class="text-head1">Emmanuel Fabella @ RTU</p>
+    <p class="text-head2">Web Systems & Technology</p>
+  </header>
+  <main class="relative flex flex-col justify-center items-center">
+    <h1 class="text-enter absolute top-10 text-7xl font-semibold opacity-0">???</h1>
+    <image 
+      src="./images/maincat.png" 
+      id="cat"
+      class="cat w-6/8 h-full object-cover"
+      onclick="catClick()">
+  </main>
+  <footer class="fixed right-10 bottom-10 font-medium">
+    More about the
+      <a
+        class="text-clifford text-indigo-600 hover:text-[#9d00ff]" 
+        href="https://en.wikipedia.org/wiki/Cat">Felis Catus</a>
+  </footer>
+  <div class="black absolute bg-[#1E1E1E] w-screen h-full top-0 left-0 translate-y-[3000px]">n</div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script src="./Scripts/start.js"></script>
+</body>
+</html>

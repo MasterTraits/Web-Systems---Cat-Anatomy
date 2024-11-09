@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ::selection { background-color: rgba(255, 255, 255, 0); }
+    .transformScaleX { transform: scaleX(-1); }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="p-5 bg-[#1E1E1E] text-white overflow-hidden">
+  <header class="flex justify-between h-10 p-3 font-medium">
+    <p class="text-head1">Emmanuel Fabella @ RTU</p>
+    <p class="text-head2">Web Systems & Technology</p>
+  </header>
+  <main class="flex">
+    <div>
+      <h1 class="text-white text-enter absolute text-7xl ml-24 my-24 font-semibold opacity-0">Where is this?</h1>
+      <h1 class="text-white text-7xl ml-24 my-20 font-semibold opacity-0">filler</h1>
+      <div id="container">
+        <img src="../images/tabbyside.png" alt="cat" usemap="#workmap" class="cat h-full object-cover transformScaleX opacity-0">
+      </div>
+    </div>
+
+    <div class="bg bg-white text-black p-6 mt-12 mb-4 w-[650px] h-[700px] mx-4 rounded-2xl overflow-y-auto opacity-0">
+      <div class="header-edit w-full py-2 px-4 text-white text-4xl bg-[#1E1E1E] rounded-lg">Click parts of the cat!</div><br>
+      <div class="img-edit object-cover w-full h-80 object-center bg-no-repeat rounded-lg border-4 border-black hidden"></div>
+      <div class="textgroup-edit hidden">
+        <h1 class="text-2xl font-bold border-b-4 border-neutral-950 mt-4 mb-2 pb-2">ABOUT</h1>
+        <p class="text-edit">explanation here</p>
+      </div>
+    </div>
+  </main>
+  
+  <img src="../images/glasses.png" class="glasses w-1/2 left-1/4 top-1/3 absolute z-10 opacity-0 brightness-50">
+  <map name="workmap">
+    <area shape="rect" coords="799,162,826,202" title="Eyes" onclick="eyes()" class="cursor-pointer">
+    <area shape="rect" coords="831,210,850,242" title="Nose" onclick="Nose()" class="cursor-pointer">
+    <area shape="rect" coords="730,8,791,99" title="Ears" onclick="Ear()" class="cursor-pointer">
+    <area shape="rect" coords="746,217,802,252" title="Mouth" onclick="Mouth()" class="cursor-pointer">
+    <area shape="rect" coords="767,303,826,236" title="Whiskers" onclick="" class="cursor-pointer">
+    <area shape="rect" coords="171,415,698,504" title="Tail" onclick="" class="cursor-pointer">
+  </map>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script src="../Scripts/index.js"></script>
+</body>
+</html>
