@@ -41,10 +41,10 @@
 
     <div class="bg bg-white text-black p-6 mt-12 mb-4 w-[650px] h-[700px] mx-4 rounded-2xl overflow-y-auto opacity-0">
       <div class="header-edit w-full py-2 px-4 text-white text-4xl bg-[#1E1E1E] rounded-lg">Click parts of the cat!</div><br>
-      <div class="img-edit object-cover w-full h-80 object-center bg-no-repeat rounded-lg border-4 border-black hidden"></div>
-      <div class="textgroup-edit hidden">
+      <div class="img-edit object-contain w-full h-80 object-bottom bg-no-repeat rounded-lg border-4 border-black"></div>
+      <div class="textgroup-edit">
         <h1 class="text-2xl font-bold border-b-4 border-neutral-950 mt-4 mb-2 pb-2">ABOUT</h1>
-        <p class="text-edit">explanation here</p>
+        <p class="text-edit">Tabby cats are known for their distinctive coat patterns, which include stripes, dots, lines, or swirling patterns, usually with an "M" shape on their foreheads. They are not a specific breed but rather a coat type seen in many cat breeds. Tabbies are often friendly, affectionate, and make great pets.</p>
       </div>
     </div>
   </main>
@@ -55,8 +55,16 @@
     <area shape="rect" coords="831,210,850,242" title="Nose" onclick="Nose()" class="cursor-pointer">
     <area shape="rect" coords="730,8,791,99" title="Ears" onclick="Ear()" class="cursor-pointer">
     <area shape="rect" coords="746,217,802,252" title="Mouth" onclick="Mouth()" class="cursor-pointer">
-    <area shape="rect" coords="767,303,826,236" title="Whiskers" onclick="" class="cursor-pointer">
-    <area shape="rect" coords="171,415,698,504" title="Tail" onclick="" class="cursor-pointer">
+    <area shape="rect" coords="767,303,826,236" title="Whiskers" onclick="Whiskers()" class="cursor-pointer">
+    <area shape="rect" coords="171,415,698,504" title="Tail" onclick="Tail()" class="cursor-pointer">
+    <area shape="rect" coords="720,96,847,152" title="Skull & Brain" onclick="SkullnBrain()" class="cursor-pointer">
+    <area shape="rect" coords="467,118,650,271" title="Lungs" onclick="Lungs()" class="cursor-pointer">
+    <area shape="rect" coords="528,271,656,331" title="Heart" onclick="Heart()" class="cursor-pointer">
+    <area shape="rect" coords="423,156,501,333" title="Liver" onclick="Liver()" class="cursor-pointer">
+    <area shape="rect" coords="327,141,396,329" title="Spleen" onclick="Spleen()" class="cursor-pointer">
+    <area shape="rect" coords="207,153,286,193" title="Kidney" onclick="Kidney()" class="cursor-pointer">
+    <area shape="rect" coords="175,86,581,155" title="Spine" onclick="Spine()" class="cursor-pointer">
+    <area shape="rect" coords="154,248,321,406" title="Small Intenstine" onclick="smallIntestine()" class="cursor-pointer">
   </map>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
